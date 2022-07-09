@@ -3,8 +3,10 @@
  * @return {number}
  */
 
-function firstUniqChar(s) {
+function firstUniqueChar(s) {
     for (let i = 0; i < s.length; i++) {
+        // cross-referencing each element of the supplied string  
+        // returning a value based on what was found
         if (s.indexOf(s[i]) == i && s.indexOf(s[i], i+1) == -1) { 
           return i;
         } else if (s.length == 1) {

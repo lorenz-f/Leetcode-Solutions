@@ -5,6 +5,7 @@ function lengthOfLastWord(s) {
         arr2.push(arr1[i])
       }
     }
+    // check for last result in given phrase, setting lastWord to the last result
     let lastWord = arr2[arr2.length - 1]
     return lastWord.length;
 }

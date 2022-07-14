@@ -2,14 +2,13 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var runningSum = function(nums) {
-var result = [];
-var currSum;
+function runningSum(nums) {
+let result = [];
+let currSum;
 
-for (var i = 0; i < nums.length; i++) {
-    currSum = 0;
-    
-    for (var j = 0; j < i + 1; j++) {
+for (let i = 0; i < nums.length; i++) {
+    currSum = 0;    
+    for (let j = 0; j < i + 1; j++) {
         currSum += nums[j];
     }
     

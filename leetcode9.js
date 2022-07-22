@@ -1,4 +1,5 @@
 function isPalindrome(number) {
+    // conversion into a string such that we can utilize methods such as slicing, splitting etc
     let numString = number.toString();
     let string1, string2;
     numString.length % 2 !== 0 
